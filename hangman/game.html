@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+
+    <!-- CSS Stylesheet -->
+    <link href="mystyle.css" rel="stylesheet" >
+</head>
+
+<body>
+    <!-- welcome part -->
+    <div id="welcome">
+        <h1>Welcome to Hangman game!</h1>
+        <button id= start onclick="start()">Let's start</button>
+    </div>
+    <div id="instruction"><p>The game word consists of some letters. Pleas guess them one by one.</p></div>
+    <div id="theme"><p>Hint: The theme is fruit.</p></div>
+
+    <!-- game part -->
+    <div id="alarm"></div>
+    <div id="input"></div>
+    <div id="guessWord">123</div>
+    <div id="hangmanPic"></div>
+    <div id="reset"><button id="reset-button" type="button" onclick="location.reload();">Restart</button></div>
+
+    <!-- virtual keyboard, use ASCII code to set the ids-->
+    <div id="container">
+        <ul id="keyboard">
+            <li class="letter" id="65">A</li>
+            <li class="letter" id="66">B</li>
+            <li class="letter" id="67">C</li>
+            <li class="letter" id="68">D</li>
+            <li class="letter" id="69">E</li>
+            <li class="letter" id="70">F</li>
+            <li class="letter" id="71">G</li>
+            <li class="letter" id="72">H</li>
+            <li class="letter" id="73">I</li>
+            <li class="letter" id="74">J</li>
+            <li class="letter" id="75">K</li>
+            <li class="letter" id="76">L</li>
+            <li class="letter" id="77">M</li>
+            <li class="letter" id="78">N</li>
+            <li class="letter" id="79">O</li>
+            <li class="letter" id="80">P</li>
+            <li class="letter" id="81">Q</li>
+            <li class="letter" id="82">R</li>
+            <li class="letter" id="83">S</li>
+            <li class="letter" id="84">T</li>
+            <li class="letter" id="85">U</li>
+            <li class="letter" id="86">V</li>
+            <li class="letter" id="87">W</li>
+            <li class="letter" id="88">X</li>
+            <li class="letter" id="89">Y</li>
+            <li class="letter" id="90">Z</li>
+        </ul>
+    </div>
+
+    <!-- JS library -->
+    <script src="myjs.js"></script>
+
+</body>
+</html>

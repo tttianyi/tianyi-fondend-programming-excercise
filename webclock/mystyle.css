@@ -1,0 +1,90 @@
+/* Fonts */
+@font-face{
+font-family: TickingTimebombBB;
+src: url("TickingTimebombBB.ttf");
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: TickingTimebombBB;
+}
+
+h1{
+    position: absolute;
+    width: 812px;
+    height: 180px;
+    left: 320px;
+    top: 220px;
+    font-size: 140px;
+    line-height: 161px;
+    text-align: center;
+}
+
+h2{
+    position: absolute;
+    width: 812px;
+    height: 58px;
+    left: 320px;
+    top: 420px;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#label-set-time{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 120px;
+    left: 1060px;
+    font-size: 20px;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+}
+
+#label-set-date{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 220px;
+    left: 1060px;
+    font-size: 20px;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+}
+
+
+#time-form{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 100px;
+    left: 1200px;
+    font-size: 14px;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 10px;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+#date-form{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 200px;
+    left: 1200px;
+    font-size: 14px;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 10px;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}

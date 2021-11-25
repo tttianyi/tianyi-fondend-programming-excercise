@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tianyi_lab3</title>
+
+    <script>
+        "use strict";
+
+        //set the beginning of the game
+        alert("Welcome to Game Guess!");
+
+        //define x as the secret answer
+        var x = Math.floor(Math.random()*10)+1;
+        //define the random guess number
+        var guessNum = prompt("Please guess an integer number between 1 and 10."); 
+
+        //give the second chance for users
+        for(var i=0;i<1;i++){//change expression to give more chances
+            if(guessNum<x){
+                guessNum = prompt("Try a bigger number!");
+            }
+            else if(guessNum>x){
+                guessNum = prompt("Try a smaller number!");
+            }
+            else if(guessNum==x){break;}
+            console.log("Round "+i);//for recording
+            console.log("guessNum is "+guessNum)//for recording
+        } 
+
+        //set the end of the game
+        if(guessNum==x){
+                alert("You are win!");
+            }
+        else if(guessNum!=x){
+            alert("You are lose! The correct number is "+x+"!");
+        }
+    </script> 
+
+</head>
+<body>
+
+</body>
+</html>

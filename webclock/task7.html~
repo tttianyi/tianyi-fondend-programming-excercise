@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Time</title>
+
+    <!-- CSS Stylesheet -->
+    <link href="mystyle.css" rel="stylesheet" >
+
+    <!-- JS library -->
+
+
+  </head>
+
+  <body>
+      <h1 id="time">09:45</h1>
+
+      <h2 id="date">Thursday, November 19th, 2020</h2>
+ 
+      <select id="time-form" onchange="timeUpdate1()">
+        <option id="12h">12h</option>
+        <option id="24h">24h</option>
+      </select>
+
+      <select id="date-form" onchange="longdateUpdate()" onchange="shortdateUpdate()">
+        <option id="long">Long form</option>
+        <option id="short">Short form</option>
+      </select>
+
+      <script src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
+      <script src="myjs.js"></script>
+  </body>

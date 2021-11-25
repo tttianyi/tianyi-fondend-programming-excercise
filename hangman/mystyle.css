@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Aclonica;
+    src: url("Aclonica.ttf")
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+}
+
+h1{
+    position: absolute;
+    width: 800px;
+    height: 80px;
+    left: 25%;
+    top: 120px;
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#instruction{
+    position: absolute;
+    width: 800px;
+    height: 80px;
+    left: 25%;
+    top: 140px;
+    line-height: 180px;
+    text-align: center;
+}
+
+#theme{
+    position: absolute;
+    width: 800px;
+    height: 80px;
+    left: 24%;
+    top: 540px;
+    line-height: 180px;
+    text-align: center;
+    color: #FFF1C2;
+    font-size: 12px;
+}
+
+#start{
+    position: absolute;
+    font-size: 18px;
+    font-family: Aclonica;
+    width: 300px;
+    height: 40px;
+    top: 580px;
+    left: 40%;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 1;
+}
+
+#start:hover {
+    border-color: #e5e5e5;
+    background: #FFF1C2;
+}
+
+
+#container {
+    position: absolute;
+    margin: 100px auto;
+    width: 620px;
+    top: 500px;
+    left: 30%;
+    color: #1b1e21;
+}
+
+#keyboard {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#keyboard li {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#keyboard li:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #e5e5e5;
+    background: #FFF1C2;
+}
+
+#guessWord {
+    position: absolute;
+    width: 500px;
+    height: 80px;
+    left: 32%;
+    top: 100px;
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#hangmanPic{
+    visibility: hidden;
+    position: absolute;
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    left: 37%;
+    top: 211px;
+    background-image: url("img/0.png");
+    background-size: contain;
+    transition-duration: 1s;
+}
+
+.notclick{
+    pointer-events: none;
+    color: #CFCFCF;
+}
+
+#reset {
+    visibility: hidden;
+}
+
+#reset-button {
+    position: absolute;
+    font-size: 18px;
+    font-family: Aclonica;
+    width: 300px;
+    height: 40px;
+    top: 720px;
+    left: 39%;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#reset-button:hover {
+    border-color: #e5e5e5;
+    background: #FFF1C2;
+}
