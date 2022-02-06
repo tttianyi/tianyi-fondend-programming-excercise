@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>账号注册</h1>
+
+<p>请输入账号</p>
+<input id="demo" type="text">
+
+<p>请输入密码</p>
+<input id="demo1" type="text">
+
+<p>请确认密码</p>
+<input id="demo2" type="text">
+
+<script>
+function myFunction()
+{
+var x=document.getElementById("demo2").value;
+if(x!="demo1")
+	{
+	alert("两次输入密码不一致");
+	}
+else
+	{
+	alert("注册成功");
+	}
+}
+</script>
+<br><br/>
+<br><button type="button" onclick="myFunction()">确认注册</button><br/>
+
+</body>
+</html>
