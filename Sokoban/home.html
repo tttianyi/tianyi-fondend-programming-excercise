@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div claass="home">
+        <!-- name of the game -->
+        <h1 id="sokoban">Sokoban</h1>
+        <br><br>
+
+        <!-- start button -->
+        <a href=game/game.html><button id="start_now">Start now!</button></a>
+        <br>
+
+        <!-- rules -->
+        <button id="rules" onclick="rules_open()" >Operation</button>
+        <!-- rules content-->
+        <div id="rules_content">
+            <h1 id="rules_h1">Operation</h1>
+            <p id="intro"><br>You will push the boxes around in a house, <br>trying to get them to target locations.
+                <br><br><br><br>When level is up, it means it will be harder.
+                <br><br><br><br>Use the arrow keys (up/down/left/right) <br>on the keyboard to move!</p>
+            <button id="close" onclick="rules_close()">I know!</button>
+        </div>
+
+        <!-- instruction about icons -->
+        <button id="icons" onclick="icons_open()" >Instruction</button>
+        <!-- icons content-->
+        <div id="icons_content">
+            <h1 id="icons_h1">Instruction</h1>
+            <div id="icons_pic"> </div>
+            <button id="icon_close" onclick="rules_close()">I know!</button>
+        </div>
+    </div>
+
+    <!-- back img to add some game atmosphere-->
+    <div id="back_pic"></div>
+
+    <!-- rules/instructions divs close and open-->
+    <script>
+        function rules_close(){
+            document.getElementById("rules_content").style.visibility = 'hidden';
+            document.getElementById("icons_content").style.visibility = 'hidden';
+        }
+
+        function rules_open(){
+            document.getElementById("rules_content").style.visibility = 'visible';
+        }
+
+        function icons_open(){
+            document.getElementById("icons_content").style.visibility = 'visible';
+        }
+
+        rules_close();
+    </script>
+
+</body>
+</html>
