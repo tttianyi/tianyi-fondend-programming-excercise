@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Aclonica;
+    src: url("Aclonica.ttf")
+}
+
+body{
+    color: azure;
+    background-color: black;
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+}
+
+.home{
+    color: azure;
+    background-color: black;
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back_pic{
+    z-index: -1;
+    opacity: 50%;
+    text-align: center;
+    background-image: url("../img/back.png");
+    background-size: contain;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sokoban{
+    font-size: 72px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+#start_now{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 200px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#start_now:hover{
+    background-color:#FEDC8E;
+    color: azure;
+}
+
+#close{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 200px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#close:hover{
+    background-color:#FEDC8E;
+    color: azure;
+    opacity: 100%;
+}
+
+#rules{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    width: 200px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#rules:hover{
+    background-color:#FEDC8E;
+    color: azure;
+}
+
+#icons{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 200px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#icons:hover{
+    background-color:#FEDC8E;
+    color: azure;
+}
+
+#rules_h1{
+    text-align: center;
+}
+
+#rules_content{
+    background-color: black;
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    text-align:center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 98%;
+    width: 500px;
+    height: 580px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#icons_h1{
+    text-align: center;
+}
+
+#icons_content{
+    background-color: black;
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    position: absolute;
+    z-index: 1;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 98%;
+    width: 500px;
+    height: 800px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#icons_pic {
+    background-image: url("../img/icons.png");
+    background-size: contain;
+    display:inline-block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 190px;
+    height: 400px;
+}
+
+
+#icon_close{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 200px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#icon_close:hover{
+    background-color:#FEDC8E;
+    color: azure;
+    opacity: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+.intro{
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#restart{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#restart:hover{
+    background-color:#FEDC8E;
+    color: azure;
+}
+
+#back_home{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#back_home:hover{
+    background-color:#FEDC8E;
+    color: azure;
+}
+
+#select_level{
+    font-family: Aclonica, Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.wall {
+    background: url(../img/wall.png);
+    background-size: 50px 50px;
+}
+
+.ground {
+    background: url(../img/ground.png);
+    background-size: 50px 50px;
+}
+
+.man {
+    background: url(../img/man.png);
+    background-size: 50px 50px;
+}
+
+.box {
+    background: url(../img/box.png);
+    background-size: 50px 50px;
+}
+
+.target {
+    background: url(../img/target.png);
+    background-size: 50px 50px;
+}
+
+.arrive {
+    background: url(../img/arrive.png);
+    background-size: 50px 50px;
+}

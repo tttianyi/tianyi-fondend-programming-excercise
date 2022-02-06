@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="intro">
+        <!-- level shows -->
+        <h1 class="level">Level <span>1 - Easy</span></h1>
+
+        <!-- select level -->
+        <span>Select Level</span>
+        <select id="select_level" onkeydown="lock_arrow(event)"> </select>
+        <br><br>
+
+        <!-- restart button -->
+        <button id="restart">Restart</button>
+        <br><br>
+
+        <!-- back home button -->
+        <a href="../home.html"><button id="back_home">Home</button></a>
+        <br>
+    </div>
+    <div class="map">
+        <table>
+
+        </table>
+    </div>
+
+    <script src="../js/map.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
